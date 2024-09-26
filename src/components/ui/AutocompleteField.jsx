@@ -9,7 +9,7 @@ const AutocompleteField = ({ options, label, value, ...props }) => {
         options={options}
         value={value || ""}
         {...props}
-        sx={{ width: 300 }}
+        sx={{ width: "100%" }}
         renderInput={(params) => <TextField {...params} label={label} />}
       />
     </div>

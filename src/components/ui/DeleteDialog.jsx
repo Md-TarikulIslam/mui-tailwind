@@ -47,8 +47,16 @@ export default function DeleteDialog({
               color="error"
               onClick={handleDelete}
               title="Delete"
+              size="medium"
+              className="rounded-md"
             />
-            <TonalButton color="success" onClick={handleClose} title="Cancel" />
+            <TonalButton
+              color="success"
+              onClick={handleClose}
+              title="Cancel"
+              size="medium"
+              className="rounded-md"
+            />
           </DialogActions>
         </DialogContent>
       </Dialog>

@@ -17,13 +17,19 @@ export default function DialogWrapper({
   return (
     <React.Fragment>
       <Dialog
+        PaperProps={{
+          sx: {
+            borderRadius: "24px",
+            padding: "24px",
+          },
+        }}
         fullWidth={fullWidth}
         maxWidth={size ? size : "sm"}
         open={open}
         onClose={handleClose}
       >
-        <DialogTitle>{title}</DialogTitle>
-        <DialogContent>{content}</DialogContent>
+        <DialogTitle className="p-0">{title}</DialogTitle>
+        <DialogContent className="px-0 py-6 ">{content}</DialogContent>
       </Dialog>
     </React.Fragment>
   );
