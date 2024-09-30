@@ -20,7 +20,8 @@ const ThemeToggle = () => {
   return (
     <div style={{ display: "flex", alignItems: "center" }}>
       <IconButton
-        className="rounded-lg dark:bg-childDark bg-light"
+        className=" dark:bg-childDark bg-light"
+        // color="primary"
         aria-owns={open ? "mouse-over-popover" : undefined}
         aria-haspopup="true"
         onMouseEnter={handlePopoverOpen}

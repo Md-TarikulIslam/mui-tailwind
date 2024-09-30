@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
+import { Grow } from "@mui/material";
 import Dialog from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
 import DialogTitle from "@mui/material/DialogTitle";
@@ -21,8 +22,10 @@ export default function DialogWrapper({
           sx: {
             borderRadius: "24px",
             padding: "24px",
+            boxShadow: "none",
           },
         }}
+        TransitionComponent={Grow}
         fullWidth={fullWidth}
         maxWidth={size ? size : "sm"}
         open={open}

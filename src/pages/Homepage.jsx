@@ -1,4 +1,4 @@
-import { TonalButton } from "../components/ui/Buttons";
+import { PrimaryButton, TonalButton } from "../components/ui/Buttons";
 import { InputField } from "./../components/ui/InputField";
 import AutocompleteField from "./../components/ui/AutocompleteField";
 import { useState } from "react";
@@ -29,6 +29,25 @@ const Homepage = () => {
           label="Movie"
           options={["Movie1", "Movie2", "Movie3"]}
         />
+        <TonalButton size="large" title="Button" className="rounded-full" />
+        <PrimaryButton
+          disableElevation
+          size="large"
+          title="Button"
+          className="rounded-full"
+        />
+        <PrimaryButton
+          variant="outlined"
+          size="large"
+          title="Button"
+          className="rounded-full"
+        />
+        <PrimaryButton
+          variant="text"
+          size="large"
+          title="Button"
+          className="rounded-full"
+        />
 
         <DialogWrapper
           title="Add Something"
@@ -42,6 +61,7 @@ const Homepage = () => {
           handleClose={handleClose}
         />
       </div>
+
       <DataTable
         columns={columns}
         initialRows={division || []}

@@ -32,7 +32,7 @@ export const darkTheme = createTheme({
     },
     background: {
       default: "#121212", // Dark background color
-      paper: "#1d1d1d", // Paper component background color in dark mode
+      paper: "#000000", // Paper component background color in dark mode
     },
   },
   typography: {
