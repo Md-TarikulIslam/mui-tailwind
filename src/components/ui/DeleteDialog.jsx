@@ -54,7 +54,7 @@ export default function DeleteDialog({ open, handleClose, handleDelete }) {
               <TonalButton
                 color="success"
                 onClick={handleClose}
-                title="No, Keep it"
+                title="No, Keep it."
                 size="large"
                 className="rounded-full "
                 fullWidth
@@ -62,7 +62,7 @@ export default function DeleteDialog({ open, handleClose, handleDelete }) {
               <PrimaryButton
                 color="error"
                 onClick={handleDelete}
-                title="Yes, Delete"
+                title="Yes, Delete!"
                 size="large"
                 className="rounded-full "
                 fullWidth
